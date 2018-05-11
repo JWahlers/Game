@@ -154,3 +154,62 @@ function runController()
 		}
 	}
 }
+
+
+
+// Don't pollute the global (window) namespace! Wrap in a function to essentially create a "private" closure of scope.
+(function() {
+	function Game() {
+		this.stateManager;
+
+		this.init = function() {
+			this.stateManager = new StateManager();
+		}
+
+		this.run = function() {
+
+		}
+
+		this.checkHazards = function() {
+
+		}
+	}
+
+	function StateManager() {
+		this.currentLevel = 0;
+	}
+
+	function Level() {
+		this.matrix = [];
+		this.xLength = 10;
+		this.yLength = 10;
+
+		this.display = function() {
+
+		}
+	}
+
+	function Player() {
+		this.health = 3;
+
+	}
+
+	function Door() {
+		this.isOpen = false;
+
+		this.open = function() {
+
+		}
+	}
+
+	function Wall() {
+
+	}
+
+	function Obstruction() {
+		// Abstract for Doors/Walls?
+	}
+
+	// Namespace yoself and keep a reference
+	window.justin.game = new Game();
+})();
