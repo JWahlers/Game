@@ -1,7 +1,10 @@
 .kg-game-board
 {
     font-family: monospace;
-    min-height: 460px;
+    font-size: 20px;
+    height: 500px;
+    background-color: gray !important; /* Yuck, !important... one more reason why bootstrap can be a pain... */
+    line-height: 15px;
 }
 
 .start-button {
