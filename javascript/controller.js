@@ -111,17 +111,16 @@ function runController()
 			{
 				if(x == playerObject.x && y == playerObject.y)
 				{
-					// board += '&Otilde;';
-					board += '<image src="https://s1.piq.land/2014/10/27/uONjmfqQwnIIoM41JNqiXLnE_400x400.png" height="20" width="20"/>';
+					board += '<img src="../resources/player.PNG" height="20" width="20"/>'
 
 				}
 				else
 				{
 					var boardKey = gameBoardObject.matrix[y][x];
 
-					if(boardKey.includes('D')) board += '<image src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Barn_door.png" height="20" width="20"/>';
-					else if(boardKey == '#') board += '<image src="https://s1.piq.land/2013/06/27/RKhw2o4kp6FlCm8lFDN0g9yg_400x400.png" height="20" width="20"/>';
-					else board += '<image src="https://www.publicdomainpictures.net/pictures/130000/nahled/white-tiles.jpg" height="20" width="20"/>';
+					if(boardKey.includes('D')) board += '<img src="../resources/door.PNG" height="20" width="20"/>';
+					else if(boardKey == '#') board += '<img src="../resources/wall.PNG" height="20" width="20"/>';
+					else board += '<img src="../resources/floor.PNG" height="20" width="20"/>';
 
 				}
 			}
