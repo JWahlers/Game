@@ -1,12 +1,20 @@
+/*Styling for the game's "container"*/
 .kg-game-board
 {
     font-family: monospace;
     font-size: 20px;
     height: 500px;
-    background-color: gray !important; /* Yuck, !important... one more reason why bootstrap can be a pain... */
+    /*Yuck, !important... one more reason why bootstrap can be a pain... -GoN*/
+    /*So build me a damn layout instead of pointing out the obvious! -K*/
+    background-color: gray !important; 
     line-height: 15px;
 }
 
-.start-button {
+
+
+
+/*Styling for the game's start button*/
+.start-button 
+{
     margin-top: 200px;
 }
